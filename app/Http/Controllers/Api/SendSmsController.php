@@ -16,6 +16,7 @@ class SendSmsController extends Controller
 {
     public function sendCode(Request $request)
     {
+        
         if($request->isMethod('post')){
            $phone =  $request->input('phone');
            $smsid =  $request->input('smsid');
